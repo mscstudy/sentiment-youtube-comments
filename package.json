@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@google-cloud/translate": "^6.2.0",
+    "child-process-promise": "^2.2.1",
+    "csv-parser": "^3.0.0",
+    "fs-extra": "^9.1.0",
+    "lodash": "^4.17.21"
+  }
+}
