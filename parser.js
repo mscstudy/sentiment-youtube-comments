@@ -3,7 +3,7 @@ const fs = require('fs-extra')
 const _ = require('lodash')
 const { Translate } = require('@google-cloud/translate').v2;
 
-const translate = new Translate({ key: 'AIzaSyBb9ZuftT8Ew84D45zpTKkBrwAkN4rLUV8' });
+const translate = new Translate({ key: 'xxxxx' });
 
 let results = [];
 
