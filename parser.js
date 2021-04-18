@@ -13,17 +13,17 @@ fs.createReadStream('raw.csv')
   .on('end', async () => {
     // console.log(results);
     
-    results.forEach((obj, index) => {
-      if (obj.arg1 === '') {
-        let found = index - 1
-        while (results[found].arg1 === '') {
-          found -= 1
-        }
-        results[found].text += '\n' + obj.text
-      }
-    })
+    // results.forEach((obj, index) => {
+    //   if (obj.arg1 === '') {
+    //     let found = index - 1
+    //     while (results[found].arg1 === '') {
+    //       found -= 1
+    //     }
+    //     results[found].text += '\n' + obj.text
+    //   }
+    // })
 
-    results = results.filter(obj => obj.arg1 !== '')
+    // results = results.filter(obj => obj.arg1 !== '')
     console.log('count:', results.length)
 
     for (let i = 0; i < results.length; i++) {
@@ -43,5 +43,5 @@ fs.createReadStream('raw.csv')
       }
     })
     content.push(']')
-    fs.outputFileSync('raw.json', content.join('\n'))
+    fs.outputFileSync('raw_3034.json', content.join('\n'))
   });
